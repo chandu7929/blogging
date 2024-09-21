@@ -3,7 +3,7 @@ A Drupal recipe of type "Site" that configures a standard blogging site, leverag
 and incorporating the Navigation module to provide a seamless editor experience.
 
 ### Usage
-Setup site using this recipe using drush command.
+Site set up using the blogging recipe via Drush command.
 ```
 drush si recipes/blogging --account-pass admin
 ```
