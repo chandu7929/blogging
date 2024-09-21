@@ -1,0 +1,53 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 180b19cb-da46-45b4-b92d-b88c597f4d6a
+  bundle: article
+  default_langcode: en
+  depends:
+    88e25e97-c8c6-4dd6-a1d3-ba1af7a97823: file
+    51a55cd2-7329-415c-9fd1-889b57d20234: taxonomy_term
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: 'Demo Article Content on Picaso'
+  created:
+    -
+      value: 1726952421
+  promote:
+    -
+      value: true
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  body:
+    -
+      value: '<p class="mb-2 last:mb-0"><strong>Introduction:</strong></p><p class="mb-2 last:mb-0">Picaso is a popular Drupal theme designed for blogging and content creation. In this demo article, we will explore how to create engaging content on a Picaso-based Drupal site. We will cover the essential features and functionalities of Picaso, highlighting its strengths and benefits for bloggers and content creators.</p><p class="mb-2 last:mb-0"><strong>Picaso Theme Overview:</strong></p><p class="mb-2 last:mb-0">Picaso is a modern, responsive, and highly customizable Drupal theme. It is designed to provide a seamless user experience, with a focus on readability, simplicity, and ease of use. Picaso is ideal for bloggers, writers, and content creators who want to showcase their work in a clean and visually appealing way.</p><p class="mb-2 last:mb-0"><strong>Key Features of Picaso:</strong></p><ul><li><strong>Responsive Design:</strong> Picaso is fully responsive, ensuring that your content looks great on all devices, including desktops, laptops, tablets, and mobile phones.</li><li><strong>Customizable Layout:</strong> Picaso offers a range of layout options, allowing you to tailor your site''s design to your specific needs.</li><li><strong>Typography:</strong> Picaso features a range of typography options, making it easy to customize the look and feel of your content.</li><li><strong>Image Handling:</strong> Picaso provides advanced image handling capabilities, including image resizing, cropping, and compression.</li></ul><p class="mb-2 last:mb-0"><strong>Creating Engaging Content on Picaso:</strong></p><p class="mb-2 last:mb-0">To create engaging content on a Picaso-based Drupal site, follow these best practices:</p><ul><li><strong>Use High-Quality Images:</strong> Picaso''s advanced image handling capabilities make it easy to upload and display high-quality images that enhance your content.</li><li><strong>Optimize Your Content:</strong> Use headings, subheadings, and short paragraphs to make your content easy to read and understand.</li><li><strong>Use Customizable Layouts:</strong> Take advantage of Picaso''s customizable layouts to create a unique and engaging design that showcases your content.</li><li><strong>Leverage Typography:</strong> Use Picaso''s typography options to add visual interest to your content and make it more engaging.</li></ul>'
+      format: full_html
+      summary: ''
+  field_image:
+    -
+      entity: 88e25e97-c8c6-4dd6-a1d3-ba1af7a97823
+      alt: 'Article one'
+      title: ''
+      width: 1024
+      height: 768
+  field_tags:
+    -
+      entity: 51a55cd2-7329-415c-9fd1-889b57d20234

@@ -1,0 +1,40 @@
+_meta:
+  version: '1.0'
+  entity_type: node
+  uuid: 88d832af-3975-4562-b220-b52423779163
+  bundle: page
+  default_langcode: en
+default:
+  revision_uid:
+    -
+      target_id: 1
+  status:
+    -
+      value: true
+  uid:
+    -
+      target_id: 1
+  title:
+    -
+      value: Contact
+  created:
+    -
+      value: 1726999964
+  promote:
+    -
+      value: false
+  sticky:
+    -
+      value: false
+  revision_translation_affected:
+    -
+      value: true
+  path:
+    -
+      alias: ''
+      langcode: en
+  body:
+    -
+      value: '<p class="mb-2 last:mb-0"><strong>Get in Touch</strong></p><p class="mb-2 last:mb-0">I''d love to hear from you! Whether you have a question, comment, or just want to say hello, please don''t hesitate to reach out. You can contact me through the following methods:</p><p class="mb-2 last:mb-0"><strong>Email</strong></p><p class="mb-2 last:mb-0">You can also email me directly at <a style="color:rgb(50, 134, 255);cursor:pointer;text-decoration:none;">info@example.com</a>.</p><p class="mb-2 last:mb-0"><strong>Social Media</strong></p><p class="mb-2 last:mb-0">Follow me on social media to stay up-to-date with the latest news and updates:</p><ul><li><strong>Twitter:</strong> <a style="color:rgb(50, 134, 255);cursor:pointer;text-decoration:none;">@example</a></li><li><strong>Facebook:</strong> <a style="color:rgb(50, 134, 255);cursor:pointer;text-decoration:none;">@example</a></li><li><strong>Instagram:</strong> <a style="color:rgb(50, 134, 255);cursor:pointer;text-decoration:none;">@example</a></li></ul><p class="mb-2 last:mb-0"><strong>Address</strong></p><p class="mb-2 last:mb-0">If you prefer to send mail or packages, you can reach me at:</p><p class="mb-2 last:mb-0">[Your Name] [Your Address] [City, State, ZIP]</p><p class="mb-2 last:mb-0"><strong>Phone</strong></p><p class="mb-2 last:mb-0">You can also call me at [phone number].</p><p class="mb-2 last:mb-0">I look forward to hearing from you!</p>'
+      format: full_html
+      summary: ''

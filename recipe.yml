@@ -67,6 +67,9 @@ config:
     node.settings:
       simpleConfigUpdate:
         use_admin_theme: true
+    system.site:
+      simpleConfigUpdate:
+        page.front: '/home-page'
     user.role.anonymous:
       grantPermission: 'access content'
     user.role.authenticated:
