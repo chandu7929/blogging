@@ -1,5 +1,5 @@
 {
-    "name": "drupal_recipe/blogging",
+    "name": "drupal/blogging",
     "description": "An install type drupal recipe for blogging site.",
     "type": "drupal-recipe",
     "require": {

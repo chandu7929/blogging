@@ -3,7 +3,36 @@ A Drupal recipe of type "Site" that configures a standard blogging site, leverag
 and incorporating the Navigation module to provide a seamless editor experience.
 
 ### Usage
-Site set up using the blogging recipe via Drush command.
-```
-drush si recipes/blogging --account-pass admin
-```
+
+- Create drupal project by running below command.
+  ```
+  composer create-project drupal/recommended-project project && cd project
+  ```
+- Update your project composer.json `extra.installer-paths` for recipes.
+  ```
+   "extra": {
+      "installer-paths": {
+        ...
+        "web/recipes/contrib/{$name}": [
+            "type:drupal-theme"
+        ]
+      }
+      ...
+   }
+  ```
+- Update project composer.json `repository` section to fetch this recipe from vcs.
+  ```
+  ...
+  {
+    "type": "vcs",
+    "url": "git@github.com:chandu7929/blogging.git"
+  }
+  ```
+- Add this recipe using composer.
+  ```
+  composer require drupal/blogging
+  ```
+- Site set up using this recipe by running below drush command.
+  ```
+  drush si recipes/contrib/blogging --account-pass admin
+  ```
