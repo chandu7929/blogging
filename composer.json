@@ -1,0 +1,10 @@
+{
+    "name": "drupal_recipe/blogging",
+    "description": "An install type drupal recipe for blogging site.",
+    "type": "drupal-recipe",
+    "require": {
+        "drupal/core": "^11",
+        "drush/drush": "^13.2"
+    },
+    "license": "GPL-2.0-or-later"
+}

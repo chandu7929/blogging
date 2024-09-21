@@ -1,0 +1,96 @@
+name: 'Bloggin recipe'
+description: "Provide standard site for blogging purpose"
+# The type key is similar to the package key in module.info.yml. It
+# can be used by the UI to group Drupal recipes. Additionally,
+# the type 'Site' means that the Drupal recipe will be listed in
+# the installer.
+type: 'Site'
+
+recipes:
+  # An array of recipe's to apply prior to applying this recipe. Contributed or
+  # custom recipes can apply Drupal core recipes by specifying the root-relative
+  # path to the recipe. If any of these recipes fail to be applied, this
+  # recipe will not be applied either.
+  - core/recipes/article_content_type
+  - core/recipes/article_tags
+  - core/recipes/page_content_type
+  - core/recipes/basic_html_format_editor
+  - core/recipes/full_html_format_editor
+  - core/recipes/content_search
+  - core/recipes/restricted_html_format
+  - core/recipes/administrator_role
+  - core/recipes/content_editor_role
+  - core/recipes/core_recommended_performance
+  - core/recipes/core_recommended_admin_theme
+  - core/recipes/core_recommended_front_end_theme
+  - core/recipes/user_picture
+
+install:
+  # An array of modules or themes to install, if they are not already.
+  # The system will detect if it is a theme or a module. During the
+  # install only simple configuration from the new modules is created.
+  # This allows the Drupal recipe control over the configuration.
+  - image
+  - config
+  - menu_link_content
+  - datetime
+  - menu_ui
+  - options
+  - field_ui
+  - views_ui
+  - navigation
+
+config:
+  # A Drupal recipe can have a config directory. All configuration
+  # is this directory will be imported after the modules have been
+  # installed.
+
+  # Additionally, the Drupal recipe can install configuration entities
+  # provided by the modules it configures. This allows them to not have
+  # to maintain or copy this configuration.
+  import:
+    # Import all configuration that is provided by the navigation module and any
+    # optional configuration that depends on the navigation module that is provided by
+    # modules already installed.
+    navigation: '*'
+    # Import specific configuration from navigation module.
+    image:
+      - image.style.large
+      - image.style.thumbnail
+    node:
+      - views.view.content
+    user:
+      - views.view.user_admin_people
+  # Configuration actions may be defined. The structure here should be
+  # configuration entity ID, action, and then action arguments.
+  actions:
+    node.settings:
+      simpleConfigUpdate:
+        use_admin_theme: true
+    user.role.anonymous:
+      grantPermission: 'access content'
+    user.role.authenticated:
+      grantPermissions:
+        - 'access content'
+        - 'delete own files'
+    user.role.content_editor:
+      grantPermissions:
+        - 'access content overview'
+        - 'access files overview'
+        - 'administer url aliases'
+        - 'create terms in tags'
+        - 'create url aliases'
+        - 'edit terms in tags'
+        - 'delete own files'
+        - 'revert all revisions'
+        - 'view all revisions'
+        - 'view the administration theme'
+      grantPermissionsForEachNodeType:
+        - 'create %bundle content'
+        - 'delete %bundle revisions'
+        - 'delete own %bundle content'
+        - 'edit own %bundle content'
+
+content:
+# A Drupal recipe can have a content directory. All content in this
+# directory will be created after the configuration is installed.
