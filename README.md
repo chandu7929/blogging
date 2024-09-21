@@ -1,3 +1,4 @@
+
 ## About
 A Drupal recipe of type "Site" that configures a standard blogging site, leveraging core modules and themes,
 and incorporating the Navigation module to provide a seamless editor experience.
@@ -14,7 +15,7 @@ and incorporating the Navigation module to provide a seamless editor experience.
       "installer-paths": {
         ...
         "web/recipes/contrib/{$name}": [
-            "type:drupal-theme"
+            "type:drupal-recipe"
         ]
       }
       ...
@@ -34,5 +35,6 @@ and incorporating the Navigation module to provide a seamless editor experience.
   ```
 - Site set up using this recipe by running below drush command.
   ```
-  drush si recipes/contrib/blogging --account-pass admin
+  ./vendor/bin/drush si recipes/contrib/blogging --account-pass admin
   ```
+- Visit your newly setup site using blogging recipe at [http://127.0.0.1:8888](http://127.0.0.1:8888) by running drush command `./vendor/bin/drush rs`
