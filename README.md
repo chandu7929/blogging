@@ -1,6 +1,6 @@
 
 ## About
-A Drupal recipe of type "Site" that configures a standard blogging site, leveraging core modules and themes,
+A Drupal recipe of type "Site" that configures a standard blogging site, leveraging core recipes, modules and themes,
 and incorporating the Navigation module to provide a seamless editor experience.
 
 ### Usage
